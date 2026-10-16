@@ -168,6 +168,10 @@ Assert '含执行纪律：能判的必须判' ((Has $skill '能判的必须判')
 Assert '含输出格式骨架' ((Has $skill '改造后的投资版报告') -and (Has $skill '交付物的两个文件') -and (Has $skill '判据冲突裁决记录') -and (Has $skill '区域集群对照表'))
 Assert '区分报告正文与工作底稿' ((Has $skill '交付物的两个文件') -and (Has $skill '不要把工作日志混进报告') -and (Has $skill '工作底稿'))
 Assert '含实测教训：工作日志是噪音' ((Has $skill '对读者是纯噪音') -and (Has $skill '不属于这四类的，一律不进报告正文'))
+Assert '含正文禁词清单与交稿前扫描' ((Has $skill '正文禁词清单与交稿前扫描') -and (Has $skill '删末尾 ≠ 清干净') -and (Has $skill '八个词全部为 0') -and (Has $skill '残留 \{0\} = \{1\} 处'))
+Assert '含八个禁词' ((Has $skill '改造') -and (Has $skill '本版') -and (Has $skill '原报告') -and (Has $skill '表格化') -and (Has $skill '前版'))
+Assert '流程含交稿前扫描步骤' (Has $skill '交稿前扫描')
+Assert '速查表含正文混入制作过程' (Has $skill '正文混入制作过程')
 Assert '方法与数据来源只写四类' ((Has $skill '方法与数据来源说明') -and (Has $skill '判断结论可信度') -and (Has $skill '判断结论边界'))
 
 # ---------- K. 边界 ----------
