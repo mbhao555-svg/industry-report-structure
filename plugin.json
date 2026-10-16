@@ -1,6 +1,6 @@
 {
   "name": "industry-report-structure",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "行业报告结构改造器（投资版）——把产业盘点型报告改造成能回答\"投哪一段\"的投资分析报告：补齐并做出阶段判定、环节级利润分布、出清机制逐环节，落到投资含义矩阵；同时做结构诊断与呈现改造。",
   "author": { "name": "xiaomage5558" },
   "license": "MIT",

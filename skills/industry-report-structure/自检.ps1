@@ -162,7 +162,13 @@ Assert '含八项核对表' ((Has $skill '全文出现过"毛利率"吗') -and (
 Assert '含改造优先顺序六步' ((Has $skill '已有素材能判的，先判') -and (Has $skill '用 F10 接口补环节级毛利率') -and (Has $skill '若素材确实不足'))
 Assert '含执行流程八步' ((Has $skill '补阶段判定') -and (Has $skill '补环节利润') -and (Has $skill '补出清机制') -and (Has $skill '填投资矩阵'))
 Assert '含执行纪律：能判的必须判' ((Has $skill '能判的必须判') -and (Has $skill '本技能内置判据') -and (Has $skill '不编数字'))
-Assert '含输出格式骨架' ((Has $skill '改造后的投资版报告') -and (Has $skill '改造说明') -and (Has $skill '原报告数据疑点（只列不改）'))
+# ⚠️ 必须防止"工作日志混进报告"这个曾经的错误：
+# 要求技能明确区分【报告正文】与【改造记录】两个文件，且禁止把改造动作写进正文
+# 用更稳的关键词：括号与全半角在编辑器中易变，不写进断言
+Assert '含输出格式骨架' ((Has $skill '改造后的投资版报告') -and (Has $skill '交付物的两个文件') -and (Has $skill '判据冲突裁决记录') -and (Has $skill '区域集群对照表'))
+Assert '区分报告正文与工作底稿' ((Has $skill '交付物的两个文件') -and (Has $skill '不要把工作日志混进报告') -and (Has $skill '工作底稿'))
+Assert '含实测教训：工作日志是噪音' ((Has $skill '对读者是纯噪音') -and (Has $skill '不属于这四类的，一律不进报告正文'))
+Assert '方法与数据来源只写四类' ((Has $skill '方法与数据来源说明') -and (Has $skill '判断结论可信度') -and (Has $skill '判断结论边界'))
 
 # ---------- K. 边界 ----------
 Write-Host '[K] 边界声明'
