@@ -1,0 +1,6 @@
+{
+  "name": "industry-report-structure",
+  "version": "2.1.0",
+  "description": "行业报告结构改造器（投资版）——补出阶段判定/环节级利润分布/出清机制，落到投资含义矩阵，并做呈现改造。",
+  "skills": ["skills/industry-report-structure"]
+}
